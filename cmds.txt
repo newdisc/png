@@ -1,0 +1,16 @@
+#Install node with npm
+# Download from google, add to path
+# Update ~/.npmrc to have prefix set (where -g puts files)
+prefix=~/dev/bin/npmrep
+# Add prefix/bin to path
+PATH="$HOME/dev/bin/npmrep/bin:$HOME/bin:$HOME/.local/bin:$PATH"
+# Remove existing files in png
+rm *
+cd ..
+# Create new base project
+ng new png
+# Serve
+ng serve --open
+ng test
+ng e2e
+export CHROME_BIN=/snap/bin/chromium 
