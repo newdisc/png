@@ -14,3 +14,6 @@ ng serve --open
 ng test
 ng e2e
 export CHROME_BIN=/snap/bin/chromium 
+# add PrimeNG and font-awesome
+npm i --save primeng font-awesome
+# Add css to angular-cli.json
